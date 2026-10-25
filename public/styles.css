@@ -1,0 +1,194 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #242423;
+  background: #f7f7f5;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  place-items: center;
+  padding: 48px 24px;
+}
+
+.intro {
+  width: 100%;
+  max-width: 860px;
+  text-align: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.brand img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(38px, 6.5vw, 64px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.description {
+  max-width: 490px;
+  margin: 20px auto 0;
+  color: #676763;
+  font-size: 17px;
+  line-height: 1.65;
+  letter-spacing: -0.2px;
+  text-wrap: pretty;
+}
+
+.download {
+  margin-top: 30px;
+}
+
+.download-button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 22px;
+  border: 1px solid #242423;
+  border-radius: 11px;
+  background: #242423;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.download-button:hover {
+  border-color: #444441;
+  background: #444441;
+}
+
+.download-button:focus-visible {
+  outline: 3px solid #777770;
+  outline-offset: 4px;
+}
+
+.compatibility {
+  margin: 14px 0 0;
+  color: #71716b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 44px;
+  padding-top: 28px;
+  border-top: 1px solid #deded8;
+  text-align: left;
+}
+
+.release-status {
+  margin: 8px 0 0;
+  color: #71716b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.note {
+  max-width: 550px;
+  margin: 28px auto 0;
+  color: #71716b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  color: #71716b;
+  font-size: 12px;
+}
+
+footer a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+footer a:focus-visible {
+  outline: 2px solid #777770;
+  outline-offset: 4px;
+}
+
+.features h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+.features p {
+  margin: 8px 0 0;
+  color: #676763;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 36px 24px;
+  }
+
+  .brand {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .download-button {
+    transition: none;
+  }
+}
