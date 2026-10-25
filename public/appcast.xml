@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Walldance</title>
+        <item>
+            <title>0.1.1</title>
+            <pubDate>Sun, 25 Oct 2026 16:38:50 +0000</pubDate>
+            <link>https://walldance.souk.dev</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- Check for updates automatically or from the Walldance menu, then install without downloading another installer.
+- Choose automatic update checks and installation in Settings.
+]]></description>
+            <enclosure url="https://github.com/aiibe/walldance/releases/download/v0.1.1/Walldance-0.1.1.dmg" length="3925909" type="application/octet-stream" sparkle:edSignature="nAulXrQnjRuXoXHZkQaPXJ72ABqkUoIk2XQogLKsH7nlt5Tw8MC8ubvxf8WVfSwi58uCIaomnQxh/c+Fzj+QAA=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: TCJ5PTKlTp7jvKkpCkoFpHvWg85jereWHnOK/5bST2Bb4qIz0jzzeoMtozLUAtnqH90Pooy7rnO2wcdlm4LRAw==
+length: 1348
+-->
